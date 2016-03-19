@@ -102,7 +102,7 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="70e-Nt-QVp" customClass="MaterialTextField" customModule="theShowCase" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="70e-Nt-QVp" customClass="MaterialTextField" customModule="theShowCase" customModuleProvider="target">
                                         <rect key="frame" x="20" y="64" width="532" height="35"/>
                                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -111,8 +111,13 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="J8Q-yO-g33"/>
+                                            </mask>
+                                        </variation>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rex-ER-l8R" customClass="MaterialTextField" customModule="theShowCase" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rex-ER-l8R" customClass="MaterialTextField" customModule="theShowCase" customModuleProvider="target">
                                         <rect key="frame" x="20" y="121" width="532" height="35"/>
                                         <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -121,8 +126,13 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="wna-h1-uuo"/>
+                                            </mask>
+                                        </variation>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ki-fz-zxY" customClass="MaterialButton" customModule="theShowCase" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ki-fz-zxY" customClass="MaterialButton" customModule="theShowCase" customModuleProvider="target">
                                         <rect key="frame" x="181" y="220" width="199" height="34"/>
                                         <color key="backgroundColor" red="0.95686274510000002" green="0.31764705879999999" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -152,6 +162,13 @@
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="ujl-Zm-vjS"/>
+                                        <exclude reference="7xW-qf-Bgz"/>
+                                        <exclude reference="EHL-MM-12Y"/>
+                                        <exclude reference="shJ-22-dPp"/>
+                                        <exclude reference="efi-Oy-iv7"/>
+                                        <exclude reference="g0D-F7-Y04"/>
+                                        <exclude reference="z00-zE-NxE"/>
+                                        <exclude reference="xtL-3e-efc"/>
                                     </mask>
                                 </variation>
                             </view>
