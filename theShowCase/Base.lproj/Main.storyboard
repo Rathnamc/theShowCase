@@ -130,7 +130,7 @@
                                         </constraints>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="inset">
                                                 <real key="value" value="8"/>
@@ -227,6 +227,9 @@
                                                 <exclude reference="gkB-Fz-XlX"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="attemptLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S2O-GZ-I8j"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -260,10 +263,33 @@
                             <constraint firstAttribute="trailing" secondItem="Edb-FW-g36" secondAttribute="trailing" id="sxw-GP-eGi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="70e-Nt-QVp" id="L2N-hs-gjc"/>
+                        <outlet property="passwordField" destination="Rex-ER-l8R" id="JQV-jc-6eA"/>
+                        <segue destination="qqg-y2-LLZ" kind="show" identifier="loggedIn" id="1e3-KD-EeW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="126" y="61"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5fE-s8-YYM">
+            <objects>
+                <viewController id="qqg-y2-LLZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JER-Uw-MUV"/>
+                        <viewControllerLayoutGuide type="bottom" id="nwT-m2-Bmo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="edt-6G-aST">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.57254901960000004" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5yM-jw-PV0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830" y="61"/>
         </scene>
     </scenes>
     <resources>

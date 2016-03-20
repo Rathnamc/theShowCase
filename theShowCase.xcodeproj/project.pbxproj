@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3CFE1577837486DB20C2F283 /* Pods_theShowCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF5B778C65AE91225A99DE5 /* Pods_theShowCase.framework */; };
+		8330ED521C9F42760078364D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8330ED511C9F42760078364D /* DataService.swift */; };
 		8397B0701C9E6D8100513395 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8397B06D1C9E6D8100513395 /* Bolts.framework */; };
 		8397B0711C9E6D8200513395 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8397B06E1C9E6D8100513395 /* FBSDKCoreKit.framework */; };
 		8397B0721C9E6D8200513395 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8397B06F1C9E6D8100513395 /* FBSDKLoginKit.framework */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		4A66EC0597DFCA641184CDDD /* Pods-theShowCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-theShowCase.release.xcconfig"; path = "Pods/Target Support Files/Pods-theShowCase/Pods-theShowCase.release.xcconfig"; sourceTree = "<group>"; };
 		4EF5B778C65AE91225A99DE5 /* Pods_theShowCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_theShowCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8330ED511C9F42760078364D /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		8397B06D1C9E6D8100513395 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		8397B06E1C9E6D8100513395 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		8397B06F1C9E6D8100513395 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8330ED4F1C9F424D0078364D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8330ED511C9F42760078364D /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		8397B06C1C9E6D4800513395 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +106,7 @@
 		83FF5E0D1C9D1B8100AD1996 /* theShowCase */ = {
 			isa = PBXGroup;
 			children = (
+				8330ED4F1C9F424D0078364D /* Services */,
 				8397B06C1C9E6D4800513395 /* Frameworks */,
 				83FF5E2E1C9D271700AD1996 /* Util */,
 				83FF5E231C9D1B9B00AD1996 /* Resources */,
@@ -300,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83FF5E341C9DB9CE00AD1996 /* MaterialTextField.swift in Sources */,
+				8330ED521C9F42760078364D /* DataService.swift in Sources */,
 				83FF5E2D1C9D269100AD1996 /* MaterialView.swift in Sources */,
 				83FF5E111C9D1B8100AD1996 /* LoginVC.swift in Sources */,
 				83FF5E0F1C9D1B8100AD1996 /* AppDelegate.swift in Sources */,
