@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3CFE1577837486DB20C2F283 /* Pods_theShowCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF5B778C65AE91225A99DE5 /* Pods_theShowCase.framework */; };
+		8397B0701C9E6D8100513395 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8397B06D1C9E6D8100513395 /* Bolts.framework */; };
+		8397B0711C9E6D8200513395 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8397B06E1C9E6D8100513395 /* FBSDKCoreKit.framework */; };
+		8397B0721C9E6D8200513395 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8397B06F1C9E6D8100513395 /* FBSDKLoginKit.framework */; };
 		83FF5E0F1C9D1B8100AD1996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FF5E0E1C9D1B8100AD1996 /* AppDelegate.swift */; };
-		83FF5E111C9D1B8100AD1996 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FF5E101C9D1B8100AD1996 /* ViewController.swift */; };
+		83FF5E111C9D1B8100AD1996 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FF5E101C9D1B8100AD1996 /* LoginVC.swift */; };
 		83FF5E141C9D1B8100AD1996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FF5E121C9D1B8100AD1996 /* Main.storyboard */; };
 		83FF5E161C9D1B8100AD1996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83FF5E151C9D1B8100AD1996 /* Assets.xcassets */; };
 		83FF5E191C9D1B8100AD1996 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FF5E171C9D1B8100AD1996 /* LaunchScreen.storyboard */; };
@@ -26,9 +29,12 @@
 /* Begin PBXFileReference section */
 		4A66EC0597DFCA641184CDDD /* Pods-theShowCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-theShowCase.release.xcconfig"; path = "Pods/Target Support Files/Pods-theShowCase/Pods-theShowCase.release.xcconfig"; sourceTree = "<group>"; };
 		4EF5B778C65AE91225A99DE5 /* Pods_theShowCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_theShowCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8397B06D1C9E6D8100513395 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		8397B06E1C9E6D8100513395 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		8397B06F1C9E6D8100513395 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		83FF5E0B1C9D1B8100AD1996 /* theShowCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = theShowCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83FF5E0E1C9D1B8100AD1996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83FF5E101C9D1B8100AD1996 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83FF5E101C9D1B8100AD1996 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		83FF5E131C9D1B8100AD1996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83FF5E151C9D1B8100AD1996 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83FF5E181C9D1B8100AD1996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,12 +56,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CFE1577837486DB20C2F283 /* Pods_theShowCase.framework in Frameworks */,
+				8397B0711C9E6D8200513395 /* FBSDKCoreKit.framework in Frameworks */,
+				8397B0721C9E6D8200513395 /* FBSDKLoginKit.framework in Frameworks */,
+				8397B0701C9E6D8100513395 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8397B06C1C9E6D4800513395 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8397B06D1C9E6D8100513395 /* Bolts.framework */,
+				8397B06E1C9E6D8100513395 /* FBSDKCoreKit.framework */,
+				8397B06F1C9E6D8100513395 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		83FF5E021C9D1B8100AD1996 = {
 			isa = PBXGroup;
 			children = (
@@ -77,13 +96,13 @@
 		83FF5E0D1C9D1B8100AD1996 /* theShowCase */ = {
 			isa = PBXGroup;
 			children = (
+				8397B06C1C9E6D4800513395 /* Frameworks */,
 				83FF5E2E1C9D271700AD1996 /* Util */,
 				83FF5E231C9D1B9B00AD1996 /* Resources */,
 				83FF5E221C9D1B9800AD1996 /* Model */,
 				83FF5E211C9D1B9200AD1996 /* View */,
 				83FF5E201C9D1B8C00AD1996 /* Controller */,
 				83FF5E0E1C9D1B8100AD1996 /* AppDelegate.swift */,
-				83FF5E101C9D1B8100AD1996 /* ViewController.swift */,
 				83FF5E121C9D1B8100AD1996 /* Main.storyboard */,
 				83FF5E151C9D1B8100AD1996 /* Assets.xcassets */,
 				83FF5E171C9D1B8100AD1996 /* LaunchScreen.storyboard */,
@@ -95,6 +114,7 @@
 		83FF5E201C9D1B8C00AD1996 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				83FF5E101C9D1B8100AD1996 /* LoginVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -281,7 +301,7 @@
 			files = (
 				83FF5E341C9DB9CE00AD1996 /* MaterialTextField.swift in Sources */,
 				83FF5E2D1C9D269100AD1996 /* MaterialView.swift in Sources */,
-				83FF5E111C9D1B8100AD1996 /* ViewController.swift in Sources */,
+				83FF5E111C9D1B8100AD1996 /* LoginVC.swift in Sources */,
 				83FF5E0F1C9D1B8100AD1996 /* AppDelegate.swift in Sources */,
 				83FF5E301C9D272400AD1996 /* Constants.swift in Sources */,
 				83FF5E321C9DA42100AD1996 /* MaterialButton.swift in Sources */,
@@ -398,6 +418,11 @@
 			baseConfigurationReference = 8C78C1EC022B77758FBCDBAE /* Pods-theShowCase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/theShowCase",
+				);
 				INFOPLIST_FILE = theShowCase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CRDevs.theShowCase;
@@ -410,6 +435,11 @@
 			baseConfigurationReference = 4A66EC0597DFCA641184CDDD /* Pods-theShowCase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/theShowCase",
+				);
 				INFOPLIST_FILE = theShowCase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CRDevs.theShowCase;

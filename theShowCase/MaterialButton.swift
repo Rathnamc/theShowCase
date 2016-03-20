@@ -12,8 +12,6 @@ import pop
 @IBDesignable
 class MaterialButton: UIButton {
     
-    
-    
     @IBInspectable var cornerRadius: CGFloat = 5.0 {
         didSet {
             setUpView()
