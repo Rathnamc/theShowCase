@@ -70,11 +70,11 @@ class LoginVC: UIViewController {
      
         if let email = emailField.text where email != "", let pwd = passwordField.text where pwd != "" {
             
-            DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: { error, authData in
+            DataService.ds.REF_BASE.authUser(email, password: pwd) { error, authData in
                 
                 if error != nil {
                     
-                    print(error)
+                    print(error.code)
                     
                     if error.code == STATUS_ACCOUNT_NONEXIST {
                         DataService.ds.REF_BASE.createUser(email, password: pwd, withValueCompletionBlock: { error, result in
@@ -82,7 +82,8 @@ class LoginVC: UIViewController {
                             if error != nil {
                                 self.showErrorAlert("Could not Create Account", msg: "Try Again!")
                             } else {
-                                NSUserDefaults.standardUserDefaults().setValue(result[KEY_UID], forKey: KEY_UID)
+                                let uid = result["uid"] as? String
+                                NSUserDefaults.standardUserDefaults().setValue(uid, forKey: KEY_UID)
                                 
                                 DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: nil)
                                 self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
@@ -97,8 +98,7 @@ class LoginVC: UIViewController {
                 } else {
                    self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                 }
-            })
-            
+            }
             
         } else {
             showErrorAlert("Email and Password Required", msg: "You must enter an email and password")
