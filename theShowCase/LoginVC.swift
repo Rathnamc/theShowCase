@@ -56,8 +56,10 @@ class LoginVC: UIViewController {
                         print("Logged In!\(authData)")
                         
                         //Save onto new Firebase account
-                        NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: "KEY_UID")
+                        NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
                         //If successful segue into new VC
+                        
+                        print("======UID View for Key")
                         self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                     }
                 })
@@ -81,7 +83,9 @@ class LoginVC: UIViewController {
                             
                             if error != nil {
                                 self.showErrorAlert("Could not Create Account", msg: "Try Again!")
+                                
                             } else {
+                                
                                 let uid = result["uid"] as? String
                                 NSUserDefaults.standardUserDefaults().setValue(uid, forKey: KEY_UID)
                                 
