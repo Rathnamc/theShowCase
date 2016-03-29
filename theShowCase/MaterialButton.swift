@@ -47,10 +47,10 @@ class MaterialButton: UIButton {
         layer.shadowRadius = 5.0
         layer.shadowColor = UIColor(red: SHADOW_COLOR, green: SHADOW_COLOR, blue: SHADOW_COLOR, alpha: 0.5).CGColor
         
-        self.addTarget(self, action: "scaleToSmall", forControlEvents: .TouchDown)
-        self.addTarget(self, action: "scaleToSmall", forControlEvents: .TouchDragEnter)
-        self.addTarget(self, action: "scaleAnimation", forControlEvents: .TouchUpInside)
-        self.addTarget(self, action: "scaleDefault", forControlEvents: .TouchDragExit)
+        self.addTarget(self, action: #selector(MaterialButton.scaleToSmall), forControlEvents: .TouchDown)
+        self.addTarget(self, action: #selector(MaterialButton.scaleToSmall), forControlEvents: .TouchDragEnter)
+        self.addTarget(self, action: #selector(MaterialButton.scaleAnimation), forControlEvents: .TouchUpInside)
+        self.addTarget(self, action: #selector(MaterialButton.scaleDefault), forControlEvents: .TouchDragExit)
     }
     
     func scaleToSmall() {

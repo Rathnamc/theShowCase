@@ -55,6 +55,9 @@ class LoginVC: UIViewController {
                     } else {
                         print("Logged In!\(authData)")
                         
+                        let user = ["provider": authData.provider!, "likes": "test"]
+                        DataService.ds.createFirebaseUser(authData.uid, user: user)
+                        
                         //Save onto new Firebase account
                         NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
                         //If successful segue into new VC
@@ -89,7 +92,13 @@ class LoginVC: UIViewController {
                                 let uid = result["uid"] as? String
                                 NSUserDefaults.standardUserDefaults().setValue(uid, forKey: KEY_UID)
                                 
-                                DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: nil)
+                                DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: { (err, authData) in
+                                    
+                                    let user = ["provider": authData.provider!, "likes": "Email-Test"]
+                                    DataService.ds.createFirebaseUser(authData.uid, user: user)
+                                    
+                                })
+                                
                                 self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                             }
                             
