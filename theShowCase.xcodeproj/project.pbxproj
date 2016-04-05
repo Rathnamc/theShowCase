@@ -11,6 +11,7 @@
 		8330ED521C9F42760078364D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8330ED511C9F42760078364D /* DataService.swift */; };
 		8330ED541C9FB8240078364D /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8330ED531C9FB8240078364D /* FeedVC.swift */; };
 		8330ED561C9FB8E10078364D /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8330ED551C9FB8E10078364D /* PostCell.swift */; };
+		835EE2BE1CAB009500D8805B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835EE2BD1CAB009500D8805B /* Post.swift */; };
 		8397B0701C9E6D8100513395 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8397B06D1C9E6D8100513395 /* Bolts.framework */; };
 		8397B0711C9E6D8200513395 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8397B06E1C9E6D8100513395 /* FBSDKCoreKit.framework */; };
 		8397B0721C9E6D8200513395 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8397B06F1C9E6D8100513395 /* FBSDKLoginKit.framework */; };
@@ -35,6 +36,7 @@
 		8330ED511C9F42760078364D /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		8330ED531C9FB8240078364D /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		8330ED551C9FB8E10078364D /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		835EE2BD1CAB009500D8805B /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		8397B06D1C9E6D8100513395 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		8397B06E1C9E6D8100513395 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		8397B06F1C9E6D8100513395 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		83FF5E221C9D1B9800AD1996 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				835EE2BD1CAB009500D8805B /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				83FF5E0F1C9D1B8100AD1996 /* AppDelegate.swift in Sources */,
 				83FF5E301C9D272400AD1996 /* Constants.swift in Sources */,
 				83FF5E321C9DA42100AD1996 /* MaterialButton.swift in Sources */,
+				835EE2BE1CAB009500D8805B /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

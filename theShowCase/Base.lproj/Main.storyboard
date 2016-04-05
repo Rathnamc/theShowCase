@@ -305,7 +305,7 @@
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.47098902691768624" green="0.8784313725490196" blue="0.44629697182297534" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostCell" rowHeight="370" id="CIQ-gS-0tG" customClass="PostCell" customModule="theShowCase" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostCell" id="CIQ-gS-0tG" customClass="PostCell" customModule="theShowCase" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="560" height="370"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CIQ-gS-0tG" id="Teg-M7-zoE">
@@ -358,7 +358,6 @@
                                                                 </stackView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tzy-hC-H20">
                                                                     <rect key="frame" x="0.0" y="55" width="320" height="70"/>
-                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="BbK-8u-hAi"/>
                                                                     </constraints>
@@ -392,6 +391,8 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
+                                            <outlet property="descriptionText" destination="Tzy-hC-H20" id="xJc-3i-0ql"/>
+                                            <outlet property="likesLbl" destination="6fH-TA-QsJ" id="Hck-IZ-u2i"/>
                                             <outlet property="profileImg" destination="6II-1r-eR8" id="kBR-fO-4zE"/>
                                             <outlet property="showcaseImg" destination="USc-CK-EYt" id="vBg-th-hD8"/>
                                         </connections>
@@ -414,7 +415,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yM-jw-PV0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1622" y="-323"/>
+            <point key="canvasLocation" x="1437" y="-327"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lOD-Rr-BU5">
